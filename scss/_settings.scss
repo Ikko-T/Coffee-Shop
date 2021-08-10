@@ -8,8 +8,8 @@ $large: 24px;
 }
 
 body {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: $main-color;
+  color: #ffffff;
   font-size: $normal;
   font-family: 'Roboto', sans-serif;
 }

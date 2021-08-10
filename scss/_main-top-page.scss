@@ -1,0 +1,68 @@
+main {
+  .main-view {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .container {
+    max-width: 980px;
+    margin: 90px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container-text {
+    max-width: 390px;
+    margin-left: 20px;
+    p {
+      font-size: $normal;
+      line-height: 24px;
+    }
+  }
+
+  .description {
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .fixed-background-01 {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/bg_ocean_index.jpg);
+  }
+
+  .fixed-background-02 {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/bg_coffeeBean_index.jpg);
+  }
+
+  .card {
+    max-width: 980px;
+    margin: 90px auto 180px auto;
+    text-align: center;
+
+    .card-title {
+      font-size: 40px;
+      font-family: 'Abril Fatface', cursive;
+    }
+
+    .card-body {
+      margin-top: 76px;
+      line-height: 24px;
+    }
+  }
+
+  .card-fiogure {
+    img {
+      width: 100%;
+    }
+  }
+}
