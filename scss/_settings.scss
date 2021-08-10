@@ -2,3 +2,18 @@ $main-color: #000000;
 $accent-color: #4ca9b4;
 $normal: 16px;
 $large: 24px;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: $normal;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
