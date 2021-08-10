@@ -1,13 +1,5 @@
 @import '_settings';
 @import '_mixins';
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #ffffff;
-  color: #000000;
-  font-size: $normal;
-  font-family: 'Roboto', sans-serif;
-}
+@import '_header';
+@import '_main-top-page';
+@import '_footer';
