@@ -1,0 +1,19 @@
+{
+  "editor.mouseWheelZoom": true,
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "editor.hover.enabled": false,
+  "workbench.editor.untitled.hint": "hidden",
+  "window.zoomLevel": 1,
+  "security.workspace.trust.untrustedFiles": "open",
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+  "json.schemas": [],
+  "editor.formatOnSave": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "/css/"
+    }
+  ]
+}
