@@ -1,0 +1,49 @@
+footer {
+  .footer-inner {
+    max-width: 980px;
+    margin: 100px auto 57px auto;
+  }
+
+  .footer-block {
+    display: flex;
+
+    h4 {
+      font-size: 18px;
+    }
+
+    span {
+      color: $accent-color;
+    }
+  }
+
+  .footer-block:last-child {
+    margin-top: 137px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  address {
+    margin-top: 40px;
+    line-height: 30px;
+  }
+
+  nav {
+    margin-left: 50px;
+
+    li {
+      margin-top: 40px;
+    }
+  }
+
+  .footer-sns {
+    a {
+      margin-left: 30px;
+    }
+
+    i {
+      font-size: 40px;
+      color: #ffffff;
+    }
+  }
+}
