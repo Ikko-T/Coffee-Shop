@@ -1,4 +1,12 @@
 main {
+  .bx-wrapper {
+    left: 0;
+    background-color: transparent;
+    margin: 0px auto;
+    border: none;
+    box-shadow: none;
+  }
+
   .slider {
     border-bottom: 2px solid #ffffff;
   }

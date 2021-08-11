@@ -29,4 +29,11 @@ main {
       height: auto;
     }
   }
+
+  // 画像フェードイン
+  .scroll-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s;
+  }
 }
