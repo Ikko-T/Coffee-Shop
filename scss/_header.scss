@@ -2,6 +2,8 @@ header {
   height: 65px;
   background-color: $main-color;
   opacity: 0.8;
+  position: sticky;
+  top: 0;
 
   .header-inner {
     max-width: 980px;
@@ -10,7 +12,31 @@ header {
     justify-content: space-between;
   }
 
-  logo {
+  .nav-toggle {
+    display: none;
+  }
+
+  .btn-burger {
+    i {
+      display: none;
+    }
+  }
+  // .btn-burger {
+  //   position: absolute;
+  //   top: 8px;
+  //   right: 20px;
+  //   z-index: 2;
+  //   width: 21px;
+  //   height: 21px;
+  //   display: block;
+  //   cursor: pointer;
+  //   .fas {
+  //     font-size: 21px;
+  //     color: $accent-color;
+  //   }
+  // }
+
+  .logo {
     display: flex;
     align-items: center;
 

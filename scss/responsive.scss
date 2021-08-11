@@ -1,0 +1,109 @@
+// ---------------------------------
+// header
+// ---------------------------------
+@media (max-width: 930px) {
+  header {
+    position: static;
+    height: 228px;
+
+    .header-inner {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 165px;
+        height: auto;
+      }
+    }
+
+    .btn-burger {
+      position: absolute;
+      top: 8px;
+      right: 20px;
+      z-index: 2;
+      width: 21px;
+      height: 21px;
+      cursor: pointer;
+      i {
+        display: block;
+        font-size: 21px;
+        color: #4ca9b4;
+      }
+    }
+
+    nav {
+      display: none;
+    }
+
+    .nav-toggle:checked ~ nav ul {
+      display: block;
+    }
+  }
+}
+
+// ---------------------------------
+// Top page
+// ---------------------------------
+@media (max-width: 930px) {
+  main {
+    .container {
+      flex-direction: column;
+      margin-top: 50px;
+
+      .container-text {
+        margin-left: 0;
+        padding-top: 40px;
+      }
+    }
+
+    .fixed-background-01,
+    .fixed-background-02 {
+      display: none;
+    }
+
+    .card {
+      margin-bottom: 90px;
+    }
+  }
+}
+
+// ---------------------------------
+// Gallery page
+// ---------------------------------
+@media (max-width: 930px) {
+  main {
+    .heading {
+      top: 20%;
+    }
+
+    .content {
+      display: block;
+      margin-top: 30px;
+    }
+
+    .content-image {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+// ---------------------------------
+// Footer
+// ---------------------------------
+@media (max-width: 930px) {
+  .footer-block {
+    flex-direction: column;
+
+    nav {
+      margin-top: 60px;
+      margin-left: 0;
+    }
+  }
+
+  .footer-sns {
+    margin-top: 30px;
+    text-align: center;
+  }
+}

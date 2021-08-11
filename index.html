@@ -13,21 +13,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/c933ac4d6c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/index.js"></script>
     <title>THE COFFEE</title>
   </head>
 
   <body>
     <header>
       <div class="header-inner">
-        <logo
-          ><a href="index.html"><img src="images/logo.png" alt="logo" /></a
-        ></logo>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        </div>
+        <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle" />
+        <label for="navToggle" class="btn-burger"><i class="fas fa-bars"></i></label>
         <nav>
           <ul>
             <li><a href="index.html">TOP</a></li>
             <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">GALLERY</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
             <li><a href="#">LOCATION</a></li>
             <li><a href="#">ENGLISH</a></li>
           </ul>
@@ -36,10 +42,16 @@
     </header>
 
     <main>
-      <div class="main-view"><img src="images/hero_image01.jpg" alt="first view" /></div>
+      <div class="slider">
+        <div><img src="images/hero_image01.jpg" alt="first view" /></div>
+        <div><img src="images/hero_image02.jpg" alt="first view" /></div>
+        <div><img src="images/hero_image03.jpg" alt="first view" /></div>
+        <div><img src="images/hero_image04.jpg" alt="first view" /></div>
+        <div><img src="images/hero_image05.jpg" alt="first view" /></div>
+      </div>
       <section class="container">
         <div class="container-image">
-          <figure><img src="images/index_img01.jpg" alt="introduction" /></figure>
+          <img src="images/index_img01.jpg" alt="introduction" />
         </div>
         <div class="container-text">
           <p>北谷町発のコーヒースタンド。</p>
@@ -117,7 +129,7 @@
                 <a href="#"><span>ABOUT US</span></a>
               </li>
               <li>
-                <a href="#"><span>GALLERY</span></a>
+                <a href="gallery.html"><span>GALLERY</span></a>
               </li>
               <li>
                 <a href="#"><span>LOCATION</span></a>
@@ -129,9 +141,7 @@
           </nav>
         </div>
         <div class="footer-block">
-          <p class="copyright">
-            <small>Copyright 2021 THE COFFEE | Designed by <span>Ikko</span></small>
-          </p>
+          <p class="copyright">Copyright 2021 THE COFFEE | Designed by <span>Ikko</span></p>
           <div class="footer-sns">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
