@@ -12,24 +12,26 @@
       justify-content: center;
       align-items: center;
 
-      img {
-        width: 165px;
-        height: auto;
+      .logo {
+        img {
+          width: 165px;
+          height: auto;
+        }
       }
-    }
 
-    .btn-burger {
-      position: absolute;
-      top: 8px;
-      right: 20px;
-      z-index: 2;
-      width: 21px;
-      height: 21px;
-      cursor: pointer;
-      i {
-        display: block;
-        font-size: 21px;
-        color: #4ca9b4;
+      .btn-burger {
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        z-index: 2;
+        width: 21px;
+        height: 21px;
+        cursor: pointer;
+        i {
+          display: block;
+          font-size: 21px;
+          color: #4ca9b4;
+        }
       }
     }
 
@@ -75,7 +77,7 @@
 @media (max-width: 930px) {
   main {
     .heading {
-      top: 20%;
+      top: 40%;
     }
 
     .content {
