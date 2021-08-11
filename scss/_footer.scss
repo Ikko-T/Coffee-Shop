@@ -1,4 +1,6 @@
 footer {
+  padding: 0 15px;
+
   .footer-inner {
     max-width: 980px;
     margin: 100px auto 57px auto;
@@ -20,7 +22,6 @@ footer {
     margin-top: 137px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 
   address {
