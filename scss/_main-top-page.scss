@@ -1,20 +1,16 @@
 main {
+  // 画像スライダー枠削除
   .bx-wrapper {
     left: 0;
     background-color: transparent;
     margin: 0px auto;
     border: none;
+    border-bottom: 2px solid #ffffff;
     box-shadow: none;
   }
-
-  .slider {
-    border-bottom: 2px solid #ffffff;
-  }
-
   img {
     width: 100%;
   }
-
   .container {
     max-width: 980px;
     margin: 90px auto;
@@ -22,7 +18,6 @@ main {
     display: flex;
     justify-content: space-between;
   }
-
   .container-text {
     margin-left: 20px;
     p {
@@ -30,48 +25,35 @@ main {
       line-height: 24px;
     }
   }
-
   .description {
     text-align: center;
     padding-top: 40px;
   }
-
   .fixed-background-01 {
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    @include bg-fixed;
     background-image: url(../images/bg_ocean_index.jpg);
   }
-
   .fixed-background-02 {
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    @include bg-fixed;
     background-image: url(../images/bg_coffeeBean_index.jpg);
   }
-
   .card {
     max-width: 980px;
     margin: 90px auto 180px auto;
     padding: 0 15px;
     text-align: center;
-
     .card-title {
       font-size: clamp(24px, 4vw, 40px);
-      font-family: 'Abril Fatface', cursive;
+      font-family: $accent-font;
     }
-
     .card-body {
       margin-top: 76px;
       line-height: 24px;
     }
-  }
-
-  .card-figure {
-    img {
-      width: 100%;
+    .card-figure {
+      img {
+        width: 100%;
+      }
     }
   }
 }

@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/c933ac4d6c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css" />
@@ -30,7 +29,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
     <title>THE COFFEE</title>
   </head>
 
@@ -40,10 +39,11 @@
         <div class="logo">
           <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
         </div>
-        <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle" />
-        <label for="navToggle" class="btn-burger"><i class="fas fa-bars"></i></label>
+        <label for="button" class="btn js-btn">
+          <i class="fas fa-bars"></i>
+        </label>
         <nav>
-          <ul>
+          <ul class="menu">
             <li><a href="index.html">TOP</a></li>
             <li><a href="#">ABOUT US</a></li>
             <li><a href="gallery.html">GALLERY</a></li>
@@ -162,5 +162,9 @@
         </div>
       </div>
     </footer>
+
+    <p class="page-top" id="page-top">
+      <a href="#top"><i class="fas fa-arrow-circle-up"></i></a>
+    </p>
   </body>
 </html>
