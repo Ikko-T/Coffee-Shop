@@ -1,109 +1,120 @@
 // ---------------------------------
-// header
+// body
 // ---------------------------------
-@media (max-width: 930px) {
-  header {
-    position: static;
-    height: 228px;
+@media (max-width: 1020px) {
+  body {
+    .page-top {
+      .fas {
+        display: inline;
+      }
+    }
+  }
 
+  // ---------------------------------
+  // header
+  // ---------------------------------
+  header {
+    position: relative;
+    height: 228px;
     .header-inner {
       height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
       .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         img {
           width: 165px;
           height: auto;
         }
       }
-
-      .btn-burger {
-        position: absolute;
+      i {
+        display: block;
+        position: fixed;
         top: 8px;
         right: 20px;
-        z-index: 2;
         width: 21px;
         height: 21px;
-        cursor: pointer;
-        i {
-          display: block;
-          font-size: 21px;
-          color: #4ca9b4;
+        z-index: 9998;
+        font-size: clamp(21px, 4vw, 42px);
+        color: #4ca9b4;
+      }
+      nav {
+        .menu {
+          width: 70%;
+          height: 100vh;
+          position: fixed;
+          right: -100%;
+          flex-direction: column;
+          justify-content: space-around;
+          background-color: rgba(255, 255, 255, 0.9);
+          transition: 0.4s;
+          li {
+            text-align: center;
+            display: block;
+            a {
+              color: #000000;
+            }
+          }
+        }
+        .menu.open {
+          right: 0;
+          a:hover {
+            background-color: rgb(255, 255, 255);
+            transition: 0.6s;
+          }
         }
       }
     }
-
-    nav {
-      display: none;
-    }
-
-    .nav-toggle:checked ~ nav ul {
-      display: block;
-    }
   }
-}
 
-// ---------------------------------
-// Top page
-// ---------------------------------
-@media (max-width: 930px) {
+  // ---------------------------------
+  // Top page
+  // ---------------------------------
   main {
     .container {
       flex-direction: column;
       margin-top: 50px;
-
       .container-text {
         margin-left: 0;
         padding-top: 40px;
       }
     }
-
     .fixed-background-01,
     .fixed-background-02 {
       display: none;
     }
-
     .card {
       margin-bottom: 90px;
     }
   }
-}
 
-// ---------------------------------
-// Gallery page
-// ---------------------------------
-@media (max-width: 930px) {
+  // ---------------------------------
+  // Gallery page
+  // ---------------------------------
   main {
     .heading {
       top: 40%;
     }
-
     .content {
       display: block;
       margin-top: 30px;
     }
-
     .content-image {
       margin-bottom: 40px;
     }
   }
-}
 
-// ---------------------------------
-// Footer
-// ---------------------------------
-@media (max-width: 930px) {
+  // ---------------------------------
+  // Footer
+  // ---------------------------------
   .footer-block {
     flex-direction: column;
-
     nav {
       margin-top: 60px;
       margin-left: 0;
     }
   }
-
   .footer-sns {
     margin-top: 30px;
     text-align: center;

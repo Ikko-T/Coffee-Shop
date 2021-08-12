@@ -2,16 +2,14 @@ main {
   .slider {
     position: relative;
   }
-
   .heading {
     font-size: clamp(26px, 4vw, 60px);
-    font-family: 'Abril Fatface', cursive;
+    font-family: $accent-font;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
   .content {
     max-width: 980px;
     margin: 120px auto 0;
@@ -20,16 +18,13 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
   .content-image {
     margin-bottom: 56px;
-
     img {
       max-width: 100%;
       height: auto;
     }
   }
-
   // 画像フェードイン
   .scroll-fade {
     opacity: 0;
