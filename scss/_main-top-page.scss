@@ -31,11 +31,11 @@ main {
   }
   .fixed-background-01 {
     @include bg-fixed;
-    background-image: url(../images/bg_ocean_index.jpg);
+    background-image: url(../images/bg_ocean_index@2x.jpg);
   }
   .fixed-background-02 {
     @include bg-fixed;
-    background-image: url(../images/bg_coffeeBean_index.jpg);
+    background-image: url(../images/bg_coffeeBean_index@2x.jpg);
   }
   .card {
     max-width: 980px;
